@@ -56,6 +56,7 @@
     transition: border-color .15s, transform .15s;
   }
   .links a:hover { border-color: var(--accent); transform: translateY(-1px); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
   /* sections */
   section { margin-top: 72px; }
@@ -77,6 +78,14 @@
   .tag {
     display: inline-block; font-size: 11px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px;
     border-radius: 5px; background: var(--accent); color: #fff; font-weight: 500;
+  }
+
+  /* blog */
+  #blog { scroll-margin-top: 32px; }
+  .blog-intro { color: var(--muted); font-size: 14.5px; margin: -6px 0 20px; }
+  #blog .row { grid-template-columns: minmax(0, 1fr) auto; }
+  @media (max-width: 560px) {
+    #blog .row { grid-template-columns: minmax(0, 1fr); gap: 6px; }
   }
 
   /* building cards */
@@ -105,7 +114,8 @@
       Before that I was a founding engineer at <b>Martian</b>, building one of the first production LLM routers,
       and first author of <b>RouterBench</b>. I studied statistics and economics at UChicago.
     </p>
-    <nav class="links mono">
+    <nav class="links mono" aria-label="Links">
+      <a href="#blog">Blog</a>
       <a href="https://www.linkedin.com/in/qitian-hu/">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=qqobPP4AAAAJ">Google Scholar</a>
       <a href="https://github.com/onjas-6">GitHub</a>
@@ -127,6 +137,16 @@
         <div class="d">Native ads for the AI era. Came out of stealth with a $6M seed; part of a16z speedrun.</div>
       </a>
     </div>
+  </section>
+
+  <section id="blog" aria-labelledby="blog-heading">
+    <h2 id="blog-heading" class="mono">Blog</h2>
+    <p class="blog-intro">Selected writing on hyperstructures, published on Substack.</p>
+    <a class="row" href="https://onjas.substack.com/p/hyperstructures-in-human-history">
+      <span class="title">Hyperstructures in human history</span>
+      <time class="meta mono" datetime="2022-10-29">Oct 29, 2022</time>
+      <span class="desc">How are blockchain, language, and money similar.</span>
+    </a>
   </section>
 
   <section>
