@@ -64,6 +64,7 @@
     font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase;
     color: var(--faint); margin: 0 0 18px;
   }
+  .affiliations { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 0; padding: 0; list-style: none; font-weight: 600; }
   .row {
     display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: baseline;
     padding: 14px 0; border-top: 1px solid var(--line);
@@ -186,36 +187,12 @@
     </a>
   </section>
 
-  <section>
-    <h2 class="mono">Experience</h2>
-    <div class="row">
-      <span class="title">Founder &amp; CEO, Nexad / Soku AI</span>
-      <span class="meta mono">2025 – now</span>
-    </div>
-    <div class="row">
-      <span class="title">Founding Engineer, Martian</span>
-      <span class="meta mono">2023 – 2024</span>
-      <span class="desc">Helped build the production LLM router from 0 to 1, plus its LLM evaluation stack. Led RouterBench.</span>
-    </div>
-    <div class="row">
-      <span class="title">Researcher, Chicago Human-AI Lab</span>
-      <span class="meta mono">2021 – 2022</span>
-      <span class="desc">Decision-focused summarization, applied to legal text.</span>
-    </div>
-    <div class="row">
-      <span class="title">Ads systems, ByteDance</span>
-      <span class="meta mono">2021</span>
-      <span class="desc">Built advertiser analytics for TikTok and other ByteDance apps.</span>
-    </div>
-    <div class="row">
-      <span class="title">Data Engineer, Agora</span>
-      <span class="meta mono">2020</span>
-      <span class="desc">Anomaly detection and forecasting for global real-time traffic.</span>
-    </div>
-    <div class="row">
-      <span class="title">Academic Lead, TechX Academy</span>
-      <span class="meta mono">2019 – 2022</span>
-    </div>
+  <section id="background" aria-labelledby="background-heading">
+    <h2 id="background-heading" class="mono">Previously</h2>
+    <ul class="affiliations">
+      <li>Martian</li>
+      <li>TechX Academy</li>
+    </ul>
   </section>
 
   <section>
